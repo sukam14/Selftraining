@@ -27,3 +27,12 @@ fatal: refusing to merge unrelated histories
     git push origin master
 
 Note : if you are seeing a different error than troubleshoot accordingly
+
+Note : when you are adding any new file again follow the above procedure
+once you create a file
+git add filename or -A
+git commit -m "msg"
+git status
+git pull 
+git push
+
