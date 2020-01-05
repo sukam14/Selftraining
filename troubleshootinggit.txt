@@ -1,0 +1,29 @@
+#!/bin/bash
+
+Initial Steps to create and adding a file to remote git repository
+
+    mkdir firstproject
+    cd firstproject
+    git init -- initailizing an empty directory to local git repository
+    create a file 
+    git add filename
+    git commit -m "msg"
+    git status ---> this will tell you the committed file
+    now got to git browser and create a new repository
+    add the created git repository link
+    git remote add origin "git@github.com:sukam14/Selftraining.git"
+
+    git pull origin master --> this will through different errors try to troubleshoot. pasting the simple term
+    one of the below error i faced
+    $ git pull
+fatal: refusing to merge unrelated histories
+
+
+    git branch --set-upstream-to=origin/master master
+    git pull --allow-unrelated-histories
+
+    git pull -- Finally if you wont see any errors after this, then you can push your local files to remote reposittory
+
+    git push origin master
+
+Note : if you are seeing a different error than troubleshoot accordingly
