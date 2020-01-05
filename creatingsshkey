@@ -1,0 +1,7 @@
+Creating an ssh
+
+ssh-keygen -t rsa -b 4096 -C "yourgitemail"
+eval $(ssh-agent -s) --> to see your ssh-agent is running
+ ssh-add ~/.ssh/id_rsa -- to add the ssh-rsa key
+ clip < ~/.ssh/id_rsa.pub --> this syntax will copy your key and you can paste into respective site
+ now you can go to git site-->settings-->add this key and save it.
